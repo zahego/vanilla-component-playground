@@ -1,0 +1,77 @@
+html, body{
+    height:100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgb(20, 18, 29);
+}
+.paralax-img1, .paralax-img2, .paralax-img3{
+    position:relative;
+    opacity: 0.7;
+    background-position: center;
+    /*
+        fixed=parallax
+        scroll=normal
+    */
+    background-attachment: fixed;
+}
+.paralax-img1{
+    background-image: url('../pic/pic1.jpg');
+    background-size: 100% 150%;
+    min-height: 100%;
+    min-width: 100%;
+}
+.paralax-img2{
+    background-image: url('../pic/pic2.jpg');
+    min-height: 100%;
+    min-width: 100%;
+}
+.paralax-img3{
+    background-image: url('../pic/pic3.jpg');
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.paralax-text{
+    text-align: center;
+    top:50%;
+    width:100%;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.text-border{
+    background-color: black;
+    padding: 50px;
+    color: ghostwhite;
+    font-weight: bolder;
+}
+
+.section{
+    text-align: center;
+    padding: 20px;
+}
+.section-light{
+ background-color: oldlace;
+ color: rgb(61, 61, 61);
+ 
+}
+
+.section-dark{
+    color: oldlace;
+    background-color: rgb(61, 61, 61);
+   
+}
+
+.paralax-img2 .paralax-text .text-border,.paralax-img3 .paralax-text .text-border{
+    background-color: transparent;
+}
+
+@media(max-width:568px){
+    .paralax-img1, .paralax-img2, .paralax-img3{
+        background-attachment: scroll;
+    }
+}
